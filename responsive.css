@@ -1,0 +1,139 @@
+/* パソコン向けレイアウト */
+@media (max-width: 1200px) {
+   
+}
+
+/* タブレット向けレイアウト */
+@media (max-width: 1000px) {
+   
+  }
+  
+  /* スマホ向けレイアウト */
+  @media (max-width:670px) {
+    main{
+        padding: 0px 20px;
+    }
+     /* header */
+    .header-wrapper{
+        width:100%;
+        padding: 0px 20px;
+    }
+    .header-left img{
+       width:60px;
+       padding:15px 0px;
+    }
+    .header-right{
+        float: right;
+        padding-right: 40px;
+    }
+    .header-right li{
+        float: left;
+        list-style: none;
+        color: white;
+        margin-left: 20px;
+        padding:20px 0px;
+        font-size: 10px; 
+    }
+     /* top-slide */
+     .slide-wrapper {
+        width: 100%;
+        height: 300px;
+        position: relative;
+        overflow: hidden; /* はみ出したスライドを隠す */
+      }
+      .slide { /*スライド全体 */
+        width: 300%;
+        height: 100%;
+        display: flex;
+        transition: all 0.3s;
+    }
+
+     .slide div:nth-of-type(1){ 
+        background-image: url(image/top/top1_res.jpg);
+        background-size: 100%;
+      }
+      .slide div:nth-of-type(2){ 
+        background-image: url(image/top/top2_res.jpg);
+        background-size: 100%;
+      }
+      .slide div:nth-of-type(3){ 
+        background-image: url(image/top/top3_res.jpg);
+        background-size: 100%;
+      }
+      .indicator li {
+        width: 9px;
+        height: 9px;
+      }
+      /* menu */
+      .section-menu{
+        text-align: center;
+        padding: 20px 20px;
+    }
+    .section-menu-name h2{
+        font-size: 25px;  
+        color:#122748;
+        margin-bottom: 20px;
+    }
+    .menu-infos{
+        max-width: 700px;
+    }
+    .menu-info{
+        display: flex;
+        flex-direction: column; 
+    }
+    .drinkmenu{
+        width: 100%;
+    }
+    .foodmenu{
+        width: 100%; 
+    }
+    
+      /* about */
+    .section-about{
+        padding: 20px 20px;
+    }
+    .section-about h2{
+        font-size: 25px;
+    }
+    .section-about p{
+        font-size: 12px;
+    }
+    .googlemap{
+        width:350px;
+        margin-top: 10px;
+    }
+      /* contact */
+    .section-contact h2{
+        font-size: 25px;
+        margin-bottom: -30px;
+    }
+    
+    .item{
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+    .label{
+        margin-right: 50px;
+        width: 130px;
+        float: left;
+        font-size: 20px;
+        font-weight: bold;
+        color:#0e1955;
+        letter-spacing: 1px; 
+        white-space: nowrap;
+    }
+    .inputs {
+        float: left;
+        width: 1000px;   
+    }
+    textarea{
+        padding:10px;
+        font-size: 15px;
+        height: 160px;
+        width: 500px;
+        margin-bottom: 10px;
+    }
+    .contact-area{
+        width:400px;
+    }
+  }
