@@ -1,0 +1,266 @@
+/* パソコン向けレイアウト */
+@media (max-width: 1200px) {  
+}
+/* タブレット向けレイアウト */
+@media (max-width: 1000px) {
+  }
+  
+/* スマホ向けレイアウト */
+@media (max-width:680px) {
+  /*共通*/
+.caption{
+  font-size: 23px; 
+}
+.caption-small{
+  font-size: 18px;
+  padding: 15px 0px;
+}
+.caption-small-small{
+  font-size: 15px;    
+}
+.explanation{
+  font-size: 10px;    
+}
+.captionーcontact{
+  font-size: 30px;  
+}
+.explanation-contact{
+  font-size: 15px;    
+}
+/*header*/
+header{
+  background-color:#293944;
+  height: 50px;
+  padding:0px 40px;  
+}
+.header-left{
+  float: left;
+  padding: 10px 0px;
+}
+.header-left img{
+  padding-top: 5px; 
+  width: 50px; 
+}
+.header-right{
+  float: right;
+}
+.header-right li{
+  font-size: 12px;
+}
+/*shop-name*/
+.shop-name-container{
+  height: 200px;
+}
+.shop-name-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
+  text-align: center;
+}
+.shop-name-container h2{
+  text-align: left;
+}
+.shop-name-container p{
+  text-align: left;
+}
+/*menu*/
+.shop-menu{
+  padding:20px 40px;
+}
+.menu{
+  display: flex;
+  justify-content: space-between;
+  display: flex;  
+  flex-wrap: wrap;
+}
+.menus{
+  margin-bottom: 15px;
+}
+.menu img{
+  width: 48%;
+  margin-bottom: 20px; 
+}
+/*about*/
+.about-container{
+  padding: 20px 0px;
+  position: relative;
+  margin: 100px 0px;  
+}
+.about-container h2{
+  position: absolute;
+  top:15%; 
+  left:50%;
+  font-size: 14px;  
+  margin-left: 10px; 
+}
+.about-container p{
+  position: absolute;
+  top:25%;         
+  left:50%;
+  font-size: 10px;  
+  margin-left: 8px;
+}
+.about-container a{  
+  position: absolute;
+  top:100%;     
+  left:10%;
+  padding: 10px 20px;
+  background-color:#293944;
+  border-radius: 20px;  
+}
+/*contact*/
+.contact-container{
+  position: relative;
+  height:auto;
+  margin-bottom: -15px;  
+}
+.contact-container img{
+  width: 100%; 
+  height:auto;
+}
+.contact-container h2{
+  position: absolute;
+  top:20%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  padding:0;
+  margin:0;
+  font-size: 23px; 
+}
+.contact-container p{
+  position: absolute;
+  top:40%;
+  left:52%;  
+  transform: translate(-50%,-50%);
+  padding:0;
+  margin:0;
+  font-size: 10px;
+}
+.contact-btn{
+  position: absolute;
+  top:65%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  padding: 10px 20px;
+  background-color:#293944;
+  border-radius: 20px; 
+  font-size: 12px;    
+}
+/*footer*/
+footer{
+  background-color:#293944;
+  height: 60px;
+  text-align: center; 
+}
+
+
+/*スライド*/
+
+li {
+  list-style: none;
+}
+/* ↓ スライドの外枠 */
+.slide-wrapper {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  overflow: hidden; /* はみ出したスライドを隠す */
+  margin-top: -10px;
+}
+/*  ↓ スライド（コンテンツ） */
+.slide-wrapper {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden; /* はみ出したスライドを隠す */
+}
+.slide { /*スライド全体 */
+  width: 300%;
+  height: 100%;
+  display: flex;
+  transition: all 0.3s;
+}
+.slide1 {
+  transform: translateX(0);
+}
+.slide2 {
+  transform: translateX(-33.33%);
+}
+.slide3 { 
+  transform: translateX(-66.66%);
+}
+.slide div:nth-of-type(1){ 
+  background-image: url(image/image/top1_res.jpg);
+  background-size: cover;
+}
+.slide div:nth-of-type(2){ 
+  background-image: url(image/image/top2_res.jpg);
+  background-size: cover;
+}
+.slide div:nth-of-type(3){ 
+  background-image: url(image/image/top3_res.jpg); 
+  background-size: cover;
+}
+/* ↓ インジケーター */
+.indicator {
+  width: 100%;
+  position: absolute;
+  bottom: 15px;
+  display: flex;
+  column-gap: 18px;
+  z-index: 9;
+  justify-content: center;
+  align-items: center;
+}
+.indicator li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  list-style: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+.indicator li:first-of-type {
+  background-color: #293944;
+}
+
+/*上に戻るボタン*/
+button{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 20px;
+  bottom: 100px; 
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  color: white;
+  background-color: #293944;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  visibility: hidden;
+  transition: .3s;
+}
+/* クラス付与時の指定 */
+.is-active{
+  opacity: 1;
+  visibility: visible;
+}
+/*aリンク*/
+a{ text-decoration:none;
+  color:white;
+}
+a:hover {
+  opacity: 0.8;
+}
+a:link {
+  color:white;  
+}
+a:active {
+  color:#ffaa00; 
+}
+}

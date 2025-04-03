@@ -1,0 +1,287 @@
+*{
+    margin:0;
+    padding:0;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+}
+body{
+    background-color: white;
+    font-family: "Shippori Mincho";
+    background-size: cover;
+    width: 100%;
+}
+/*共通*/
+.caption{
+    color: #293944;
+    font-size: 30px;  
+}
+.caption-small{
+    color: #293944;
+    font-size: 25px;
+    padding: 15px 0px;
+}
+.caption-small-small{
+    color: #293944;
+    font-size: 20px;    
+}
+.explanation{
+    color: #293944;
+    font-size: 15px;    
+}
+span{
+    color: rgb(170, 99, 13);
+}
+.captionーcontact{
+    color: white;
+    font-size: 30px;  
+}
+.explanation-contact{
+    color: white;  
+    font-size: 15px;    
+}
+/*header*/
+header{
+    background-color:#293944;
+    height: 60px;
+    padding:0px 135px;  
+}
+.header-left{
+    float: left;
+    padding: 15px 0px;
+}
+.header-left img{
+    width: 70px;  
+}
+.header-right{
+    float: right;
+    padding: 15px 0px;
+}
+.header-right li{
+    float: left;
+    list-style: none;
+    text-decoration: none;
+    padding:0px 0px 0px 10px;   
+    font-size: 15px;
+}
+/*shop-name*/
+.shop-name-container{
+    height: 300px;
+    background-color: #f4f3ef;
+    position: relative;
+}
+.shop-name-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform : translate(-50%,-50%);
+    transform : translate(-50%,-50%);
+    text-align: center;
+}
+.shop-name-container h2{
+    text-align: left;
+}
+.shop-name-container p{
+    text-align: left;
+}
+/*menu*/
+.shop-menu{
+    padding:50px 135px;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+.menus{
+    margin-bottom: 15px;
+}
+/*about*/
+.about-container{
+    padding: 50px 135px;
+    position: relative;
+    margin: 100px 0px;  
+}
+.about-container img{
+    width: 100%;
+}
+.about-container h2{
+    position: absolute;
+    top:25%;
+    left:50%;
+    margin-left: 35px;
+}
+.about-container p{
+    position: absolute;
+    top:35%;        
+    left:50%;
+    margin-left: 35px;
+}
+.about-container a{  
+    position: absolute;
+    top:70%;     
+    left:50%;
+    margin-left: 35px;
+    padding: 10px 20px;
+    background-color:#293944;
+    border-radius: 20px;  
+}
+/*contact*/
+.contact-container{
+    position: relative;
+    height:auto;
+    margin-bottom: -10px;  
+}
+.contact-container img{
+    width: 100%;
+    height:auto;
+}
+.contact-container h2{
+    position: absolute;
+    top:30%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding:0;
+    margin:0;
+}
+.contact-container p{
+    position: absolute;
+    top:40%;
+    left:51%;   
+    transform: translate(-50%,-50%);
+    padding:0;
+    margin:0;
+}
+.contact-btn{
+    position: absolute;
+    top:60%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding: 10px 20px;
+    background-color:#293944;
+    border-radius: 20px; 
+    font-size: 12px;    
+}
+/*footer*/
+footer{
+    background-color:#293944;
+    height: 60px;
+    text-align: center; 
+}
+.footer-container{
+    text-align: center;
+}
+.footer-container p{ 
+    color: white;
+    font-size: 12px; 
+    padding: 20px 0px;
+}
+
+
+/*スライド*/
+li {
+    list-style: none;
+  }
+  /* ↓ スライドの外枠 */
+  .slide-wrapper {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden; /* はみ出したスライドを隠す */
+  }
+  /*  ↓ スライド（コンテンツ） */
+  .slide { /*スライド全体 */
+    width: 300%;
+    height: 100%;
+    display: flex;
+    transition: all 0.3s;
+  }
+  .slide div { /* スライド */
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .slide1 {
+    transform: translateX(0);
+  }
+  .slide2 {
+    transform: translateX(-33.33%);
+  }
+  .slide3 { 
+    transform: translateX(-66.66%);
+  }
+  .slide div:nth-of-type(1){ 
+    background-image: url(image/image/top1.jpg);
+    background-size: cover;
+  }
+  .slide div:nth-of-type(2){ 
+    background-image: url(image/image/top2.jpg);
+    background-size: cover;
+  }
+  .slide div:nth-of-type(3){ 
+    background-image: url(image/image/top3.jpg);
+    background-size: cover;
+  }
+  /* ↓ インジケーター */
+  .indicator {
+    width: 100%;
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    column-gap: 18px;
+    z-index: 9;
+    justify-content: center;
+    align-items: center;
+  }
+  .indicator li {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    list-style: none;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .indicator li:first-of-type {
+    background-color: #293944;
+  }
+
+  /*上に戻るボタン*/
+button{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 20px;
+    bottom: 100px; 
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    color: white;
+    background-color: #293944;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    visibility: hidden;
+    transition: .3s;
+  }
+  /* クラス付与時の指定 */
+  .is-active{
+    opacity: 1;
+    visibility: visible;
+  }
+  /*aリンク*/
+a{ text-decoration:none;
+    color:white;
+}
+a:hover {
+    opacity: 0.8;
+}
+a:link {
+    color:white;  
+}
+a:active {
+    color:#ffaa00; 
+}
